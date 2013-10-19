@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:background="@android:color/white"
+              android:id="@+id/ll_insertKsiazka"
+        >
+    <TextView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="tmp"
+            android:textSize="15px"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            >
+
+    </TextView>
+    <TextView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="tmp"
+            android:textSize="15px"
+            android:textColor="@android:color/black"
+            android:gravity="center">
+
+    </TextView>
+    <TextView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="tmp"
+            android:textSize="15px"
+            android:textColor="@android:color/black"
+            android:gravity="center">
+
+    </TextView>
+</LinearLayout>

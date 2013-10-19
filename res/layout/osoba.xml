@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:id="@+id/ll_osoba">
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light">
+
+        <LinearLayout
+                android:layout_width="0px"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:background="@android:color/holo_blue_dark">
+
+            <EditText
+                    android:id="@+id/et_nazwa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="nazwa"
+                    />
+            <EditText
+                    android:id="@+id/et_rokUrodzenia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="23"
+                    android:numeric="signed"
+                    ></EditText>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="Add"
+                    android:onClick="addOsoba"
+                    />
+            <Button
+                    android:id="@+id/btn_delete"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="Del"
+                    android:onClick="deleteOsoba"
+                    />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@android:color/holo_purple"
+            android:id="@+id/ll_osobaNaglowek"
+            >
+        <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ID"
+                android:textSize="15px"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                >
+
+        </TextView>
+        <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nazwa"
+                android:textSize="15px"
+                android:textColor="@android:color/black"
+                android:gravity="center">
+
+        </TextView>
+        <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Rok "
+                android:textSize="15px"
+                android:textColor="@android:color/black"
+                android:gravity="center">
+
+        </TextView>
+    </LinearLayout>
+
+
+    <ScrollView
+            android:id="@+id/sv_osoba"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_green_dark">
+        <LinearLayout
+                android:id="@+id/ll_listaOsob"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@android:color/holo_orange_dark"
+                >
+
+                </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+

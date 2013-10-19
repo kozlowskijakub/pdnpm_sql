@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:id="@+id/ll_ksiazka">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_light">
+
+            <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical"
+                    android:background="@android:color/holo_blue_dark">
+
+                <EditText
+                        android:id="@+id/et_tytul"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="tytul"
+                        />
+
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                <Button
+                        android:id="@+id/btn_add"
+                        android:layout_width="0px"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="Add"
+                        android:onClick="addKsiazka"
+                        />
+                <Button
+                        android:id="@+id/btn_delete"
+                        android:layout_width="0px"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="Del"
+                        android:onClick="deleteKsiazka"
+                        />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@android:color/holo_purple"
+                android:id="@+id/ll_ksiazkaNaglowek"
+                >
+            <TextView
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ID_ks"
+                    android:textSize="15px"
+                    android:textColor="@android:color/black"
+                    android:gravity="center"
+                    >
+
+            </TextView>
+            <TextView
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ID_os"
+                    android:textSize="15px"
+                    android:textColor="@android:color/black"
+                    android:gravity="center">
+
+            </TextView>
+            <TextView
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Tytul"
+                    android:textSize="15px"
+                    android:textColor="@android:color/black"
+                    android:gravity="center">
+
+            </TextView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
