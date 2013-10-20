@@ -7,10 +7,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.text.InputType;
 import android.util.Log;
-import android.view.Gravity;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import android.view.*;
 import android.widget.*;
 
 import java.util.ArrayList;
@@ -71,35 +68,74 @@ public class OsobaActivity extends Activity {
 
         LinearLayout mainLayout = (LinearLayout) findViewById(R.id.ll_listaOsob);
 
-        if(mainLayout.getChildCount() > 0)
+        if (mainLayout.getChildCount() > 0)
             mainLayout.removeAllViews();
 
         for (Osoba osoba : listaOsob) {
             LinearLayout temp_ll = new LinearLayout(this);
+
             TextView id = new TextView(this);
             TextView nazwa = new TextView(this);
             TextView rok = new TextView(this);
-            nazwa.setText(osoba.nazwa);
 
+            id.setText(String.valueOf(osoba.id));
+            nazwa.setText(osoba.nazwa);
             rok.setText(String.valueOf(osoba.rok_ur));
 
             LinearLayout.LayoutParams params = null;
-
             params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
             params.weight = 1;
+
+            id.setLayoutParams(params);
             nazwa.setLayoutParams(params);
             rok.setLayoutParams(params);
+
             nazwa.setTextColor(Color.WHITE);
             rok.setTextColor(Color.WHITE);
+            id.setTextColor(Color.WHITE);
 
+            temp_ll.addView(id);
             temp_ll.addView(nazwa);
             temp_ll.addView(rok);
 
+            registerForContextMenu(temp_ll);
 
 
             mainLayout.addView(temp_ll);
         }
         Toast.makeText(this, listaOsob.size() + " emenets..", Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        if (item.getTitle() == "delete") {
+
+            Osoba osoba = new Osoba();
+            osoba.rok_ur = Integer.parseInt(et_rok_urodzenia.getText().toString());
+            osoba.nazwa = et_nazwa.getText().toString();
+            dbHandler.deleteOsoba(osoba);
+            updateListView();
+        } else if (item.getTitle() == "add book") {
+            item.getItemId();
+        } else {
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(menu, v, menuInfo);
+
+
+//        ((TextView)((LinearLayout)findViewById()).getChildAt(0)).getText().toString()
+        LinearLayout linearLayout = (LinearLayout) v;
+        int id = Integer.parseInt(((TextView) linearLayout.getChildAt(0)).getText().toString());
+        ((LinearLayout) v).setId(id);
+        menu.setHeaderTitle("Context Menu");
+        menu.add(0, v.getId(), 0, "delete");
+        menu.add(0, v.getId(), 0, "add book");
+        menu.add(0, v.getId(), 0, "show books");
     }
 
 }
