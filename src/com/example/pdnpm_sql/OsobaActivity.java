@@ -2,6 +2,7 @@ package com.example.pdnpm_sql;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -16,7 +17,6 @@ import java.util.zip.Inflater;
 
 public class OsobaActivity extends Activity {
 
-    private EditText et_id;
     private EditText et_nazwa;
     private EditText et_rok_urodzenia;
     DatabaseHandler dbHandler;
@@ -28,25 +28,19 @@ public class OsobaActivity extends Activity {
 
         this.et_nazwa = (EditText) findViewById(R.id.et_nazwa);
         this.et_rok_urodzenia = (EditText) findViewById(R.id.et_rokUrodzenia);
-//        this.et_id = (EditText) findViewById(R.id.et)
+//        dbHandler.deleteDatabase(this);
+        dbHandler = DatabaseHandler.getInstance(this);
+        updateListView();
 
-
-        dbHandler = new DatabaseHandler(this);
-        dbHandler.deleteDatabase(this);
 
     }
 
-
-    // factory can be null
-    // mode = MODE_PRIVATE
     public void addOsoba(View v) {
         Osoba osoba = new Osoba();
         osoba.rok_ur = Integer.parseInt(et_rok_urodzenia.getText().toString());
         osoba.nazwa = et_nazwa.getText().toString();
         dbHandler.addOsoba(osoba);
-
         updateListView();
-
     }
 
     public void deleteOsoba(View v) {
@@ -88,19 +82,18 @@ public class OsobaActivity extends Activity {
 
             id.setLayoutParams(params);
             nazwa.setLayoutParams(params);
+
             rok.setLayoutParams(params);
 
-            nazwa.setTextColor(Color.WHITE);
+            nazwa.setTextColor(Color.BLACK);
             rok.setTextColor(Color.WHITE);
-            id.setTextColor(Color.WHITE);
+            id.setTextColor(Color.GREEN);
 
             temp_ll.addView(id);
             temp_ll.addView(nazwa);
             temp_ll.addView(rok);
 
             registerForContextMenu(temp_ll);
-
-
             mainLayout.addView(temp_ll);
         }
         Toast.makeText(this, listaOsob.size() + " emenets..", Toast.LENGTH_LONG).show();
@@ -109,14 +102,18 @@ public class OsobaActivity extends Activity {
     @Override
     public boolean onContextItemSelected(MenuItem item) {
         if (item.getTitle() == "delete") {
-
             Osoba osoba = new Osoba();
             osoba.rok_ur = Integer.parseInt(et_rok_urodzenia.getText().toString());
             osoba.nazwa = et_nazwa.getText().toString();
             dbHandler.deleteOsoba(osoba);
             updateListView();
+
         } else if (item.getTitle() == "add book") {
             item.getItemId();
+            Intent intent = new Intent(this, KsiazkaActivity.class);
+            intent.putExtra("id_user", item.getItemId());
+            startActivity(intent);
+
         } else {
             return false;
         }
@@ -127,15 +124,15 @@ public class OsobaActivity extends Activity {
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
 
-
-//        ((TextView)((LinearLayout)findViewById()).getChildAt(0)).getText().toString()
         LinearLayout linearLayout = (LinearLayout) v;
         int id = Integer.parseInt(((TextView) linearLayout.getChildAt(0)).getText().toString());
+        int id2 = v.getId();
+
         ((LinearLayout) v).setId(id);
         menu.setHeaderTitle("Context Menu");
-        menu.add(0, v.getId(), 0, "delete");
-        menu.add(0, v.getId(), 0, "add book");
-        menu.add(0, v.getId(), 0, "show books");
+        menu.add(0, id, 0, "delete");
+        menu.add(0, id, 0, "add book");
+        menu.add(0, id, 0, "show books");
     }
 
 }

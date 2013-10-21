@@ -22,29 +22,34 @@
       </GlobalState>
     </option>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ea3a7faa-bed0-45a0-a94c-50d199836419" name="Default" comment="" />
     <ignored path="pdnpm_sql.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="$PROJECT_DIR$/res/values/strings.xml" changelist="ea3a7faa-bed0-45a0-a94c-50d199836419" time="1382163391120" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="ea3a7faa-bed0-45a0-a94c-50d199836419" time="1382177027029" ignored="false" />
     <file path="/MyActivity.java" changelist="ea3a7faa-bed0-45a0-a94c-50d199836419" time="1382166378466" ignored="false" />
     <file path="/main.xml" changelist="ea3a7faa-bed0-45a0-a94c-50d199836419" time="1382167954479" ignored="false" />
     <file path="/Dummy.txt" changelist="ea3a7faa-bed0-45a0-a94c-50d199836419" time="1382168179215" ignored="false" />
-    <file path="/ksiazka.xml" changelist="ea3a7faa-bed0-45a0-a94c-50d199836419" time="1382181268675" ignored="false" />
+    <file path="/ksiazka.xml" changelist="ea3a7faa-bed0-45a0-a94c-50d199836419" time="1382358080893" ignored="false" />
     <file path="/customrow.xml" changelist="ea3a7faa-bed0-45a0-a94c-50d199836419" time="1382168209005" ignored="false" />
     <file path="/insertksiazka.xml" changelist="ea3a7faa-bed0-45a0-a94c-50d199836419" time="1382168200611" ignored="false" />
-    <file path="/KsiazkaActivity.java" changelist="ea3a7faa-bed0-45a0-a94c-50d199836419" time="1382168402539" ignored="false" />
+    <file path="/KsiazkaActivity.java" changelist="ea3a7faa-bed0-45a0-a94c-50d199836419" time="1382369831745" ignored="false" />
     <file path="$PROJECT_DIR$/gen/com/example/pdnpm_sql/R.java" changelist="ea3a7faa-bed0-45a0-a94c-50d199836419" time="1382168405807" ignored="false" />
-    <file path="/DatabaseHandler.java" changelist="ea3a7faa-bed0-45a0-a94c-50d199836419" time="1382198544663" ignored="false" />
+    <file path="/DatabaseHandler.java" changelist="ea3a7faa-bed0-45a0-a94c-50d199836419" time="1382369933634" ignored="false" />
     <file path="/fragment.java" changelist="ea3a7faa-bed0-45a0-a94c-50d199836419" time="1382168984534" ignored="false" />
     <file path="/Osoba.java" changelist="ea3a7faa-bed0-45a0-a94c-50d199836419" time="1382169079711" ignored="false" />
     <file path="/Ksiazka.java" changelist="ea3a7faa-bed0-45a0-a94c-50d199836419" time="1382169073223" ignored="false" />
-    <file path="/OsobaActivity.java" changelist="ea3a7faa-bed0-45a0-a94c-50d199836419" time="1382198800095" ignored="false" />
+    <file path="/OsobaActivity.java" changelist="ea3a7faa-bed0-45a0-a94c-50d199836419" time="1382358430113" ignored="false" />
     <file path="/CustomLayout.java" changelist="ea3a7faa-bed0-45a0-a94c-50d199836419" time="1382180304096" ignored="false" />
     <file path="$PROJECT_DIR$/gen/com/example/pdnpm_sql/BuildConfig.java" changelist="ea3a7faa-bed0-45a0-a94c-50d199836419" time="1382181227162" ignored="false" />
     <file path="/osoba.xml" changelist="ea3a7faa-bed0-45a0-a94c-50d199836419" time="1382188336148" ignored="false" />
     <file path="/a.dummy" changelist="ea3a7faa-bed0-45a0-a94c-50d199836419" time="1382187853410" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="ea3a7faa-bed0-45a0-a94c-50d199836419" time="1382370045011" ignored="false" />
+    <file path="/SingletonDatabaseHelper.java" changelist="ea3a7faa-bed0-45a0-a94c-50d199836419" time="1382354622308" ignored="false" />
+    <file path="/insertosoba.xml" changelist="ea3a7faa-bed0-45a0-a94c-50d199836419" time="1382365425313" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +64,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -95,9 +101,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/com/example/pdnpm_sql/OsobaActivity.java" line="127" class="com.example.pdnpm_sql.OsobaActivity" package="com.example.pdnpm_sql">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/example/pdnpm_sql/DatabaseHandler.java" line="41" class="com.example.pdnpm_sql.DatabaseHandler" package="com.example.pdnpm_sql">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -112,37 +117,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/example/pdnpm_sql/OsobaActivity.java" line="112" class="com.example.pdnpm_sql.OsobaActivity" package="com.example.pdnpm_sql">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/example/pdnpm_sql/OsobaActivity.java" line="110" class="com.example.pdnpm_sql.OsobaActivity" package="com.example.pdnpm_sql">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/example/pdnpm_sql/OsobaActivity.java" line="122" class="com.example.pdnpm_sql.OsobaActivity" package="com.example.pdnpm_sql">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/example/pdnpm_sql/DatabaseHandler.java" line="172" class="com.example.pdnpm_sql.DatabaseHandler" package="com.example.pdnpm_sql">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -167,60 +142,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="OsobaActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/example/pdnpm_sql/OsobaActivity.java">
+      <file leaf-file-name="KsiazkaActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/pdnpm_sql/KsiazkaActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="17" selection-start="3252" selection-end="3252" vertical-scroll-proportion="0.097510375">
+            <state line="45" column="102" selection-start="1293" selection-end="1293" vertical-scroll-proportion="-7.48">
               <folding>
-                <element signature="e#1739#1746#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1806#1815#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ksiazka.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/ksiazka.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="12" selection-start="3068" selection-end="3068" vertical-scroll-proportion="1.52">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="View.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/adt-bundle-linux-x86_64-20130917/sdk/sources/android-18/android/view/View.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17721" column="0" selection-start="686798" selection-end="686798" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Handler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/adt-bundle-linux-x86_64-20130917/sdk/sources/android-18/android/os/Handler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="0" selection-start="4112" selection-end="4112" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Looper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/adt-bundle-linux-x86_64-20130917/sdk/sources/android-18/android/os/Looper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="0" selection-start="4791" selection-end="4791" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ViewGroup.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/adt-bundle-linux-x86_64-20130917/sdk/sources/android-18/android/view/ViewGroup.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="647" column="11" selection-start="24714" selection-end="24714" vertical-scroll-proportion="0.0">
+            <state line="15" column="102" selection-start="763" selection-end="763" vertical-scroll-proportion="0.46680498">
               <folding />
             </state>
           </provider>
@@ -229,12 +166,23 @@
       <file leaf-file-name="DatabaseHandler.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/pdnpm_sql/DatabaseHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="142" column="33" selection-start="4912" selection-end="4912" vertical-scroll-proportion="0.0">
+            <state line="190" column="50" selection-start="6840" selection-end="6840" vertical-scroll-proportion="-6.0">
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3269#3276#0" expanded="true" />
-                <element signature="e#3945#3954#0" expanded="true" />
+                <element signature="e#4928#4937#0" expanded="true" />
+                <element signature="e#6090#6097#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="osoba.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/osoba.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="102" column="13" selection-start="3667" selection-end="3667" vertical-scroll-proportion="-1.34">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -249,21 +197,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/example/pdnpm_sql/MyActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/res/layout/customrow.xml" />
-        <option value="$PROJECT_DIR$/res/layout/insertosoba.xml" />
         <option value="$PROJECT_DIR$/res/layout/insertksiazka.xml" />
-        <option value="$PROJECT_DIR$/src/com/example/pdnpm_sql/KsiazkaActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/pdnpm_sql/database/DatabaseHandler.java" />
         <option value="$PROJECT_DIR$/src/database/DatabaseHandler.java" />
         <option value="$PROJECT_DIR$/src/com/example/pdnpm_sql/Ksiazka.java" />
         <option value="$PROJECT_DIR$/src/com/example/pdnpm_sql/Osoba.java" />
         <option value="$PROJECT_DIR$/src/com/example/pdnpm_sql/CustomLayout.java" />
+        <option value="$PROJECT_DIR$/src/com/example/pdnpm_sql/SingletonDatabaseHelper.java" />
         <option value="$PROJECT_DIR$/res/layout/ksiazka.xml" />
         <option value="$PROJECT_DIR$/res/layout/osoba.xml" />
-        <option value="$PROJECT_DIR$/src/com/example/pdnpm_sql/DatabaseHandler.java" />
+        <option value="$PROJECT_DIR$/res/layout/insertosoba.xml" />
         <option value="$PROJECT_DIR$/src/com/example/pdnpm_sql/OsobaActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/example/pdnpm_sql/KsiazkaActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/example/pdnpm_sql/DatabaseHandler.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -366,6 +315,10 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -385,22 +338,39 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pdnpm_sql" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pdnpm_sql" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="OverrideImplement.combined" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="AndroidLayoutSelectedEditor" value="text-editor" />
-    <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="DEBUGGABLE_DEVICE" value="emulator-5554 (adv_4.0)" />
+    <property name="DEBUGGABLE_PROCESS" value="com.example.pdnpm_sql" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -441,6 +411,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -467,19 +450,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -591,33 +561,33 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.67107004" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.67107004" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297414" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.67107004" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297414" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.67107004" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32893" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.67107004" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297414" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297414" sideWeight="0.67107004" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3976222" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297414" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24892396" sideWeight="0.67107004" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32893" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -686,9 +656,49 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+    <entry file="file://$USER_HOME$/adt-bundle-linux-x86_64-20130917/sdk/sources/android-18/android/widget/AdapterView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="6" selection-start="358" selection-end="358" vertical-scroll-proportion="0.21784233">
+        <state line="297" column="0" selection-start="9270" selection-end="9270" vertical-scroll-proportion="0.33251834">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/adt-bundle-linux-x86_64-20130917/sdk/sources/android-18/android/view/ViewGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="646" column="0" selection-start="24706" selection-end="24706" vertical-scroll-proportion="0.33255813">
+          <folding>
+            <element signature="e#5903#5962#0" expanded="true" />
+            <element signature="e#6152#6211#0" expanded="true" />
+            <element signature="e#6304#6363#0" expanded="true" />
+            <element signature="e#51676#51717#0" expanded="true" />
+            <element signature="e#212550#212590#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/adt-bundle-linux-x86_64-20130917/sdk/sources/android-18/android/graphics/Color.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="28" selection-start="1712" selection-end="1712" vertical-scroll-proportion="0.33195022">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/insertksiazka.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/insertosoba.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="47" selection-start="628" selection-end="628" vertical-scroll-proportion="0.56532663">
           <folding />
         </state>
       </provider>
@@ -702,84 +712,7 @@
     </entry>
     <entry file="file://$USER_HOME$/adt-bundle-linux-x86_64-20130917/sdk/sources/android-18/android/app/Instrumentation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1097" column="0" selection-start="42027" selection-end="42027" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/insertosoba.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="1" selection-start="703" selection-end="999" vertical-scroll-proportion="0.73115575">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/insertksiazka.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="55" selection-start="635" selection-end="635" vertical-scroll-proportion="0.5201005">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/pdnpm_sql/KsiazkaActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="45" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/adt-bundle-linux-x86_64-20130917/sdk/sources/android-18/android/widget/TextView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2916" column="53" selection-start="106481" selection-end="106481" vertical-scroll-proportion="0.17634855">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/osoba.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="7" selection-start="3778" selection-end="3778" vertical-scroll-proportion="1.8174387">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/ksiazka.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="12" selection-start="3068" selection-end="3068" vertical-scroll-proportion="1.52">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/adt-bundle-linux-x86_64-20130917/sdk/sources/android-18/android/view/ViewGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="647" column="11" selection-start="24714" selection-end="24714" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/pdnpm_sql/DatabaseHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="33" selection-start="4912" selection-end="4912" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3269#3276#0" expanded="true" />
-            <element signature="e#3945#3954#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/adt-bundle-linux-x86_64-20130917/sdk/sources/android-18/android/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17721" column="0" selection-start="686798" selection-end="686798" vertical-scroll-proportion="0.0">
+        <state line="1097" column="0" selection-start="42027" selection-end="42027" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -793,24 +726,71 @@
     </entry>
     <entry file="file://$USER_HOME$/adt-bundle-linux-x86_64-20130917/sdk/sources/android-18/android/os/Looper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="0" selection-start="4791" selection-end="4791" vertical-scroll-proportion="0.0">
+        <state line="153" column="0" selection-start="5501" selection-end="5501" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/adt-bundle-linux-x86_64-20130917/sdk/sources/android-18/android/view/Menu.java">
+    <entry file="file://$USER_HOME$/adt-bundle-linux-x86_64-20130917/sdk/sources/android-18/android/view/View.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="167" column="20" selection-start="5798" selection-end="5798" vertical-scroll-proportion="0.33255813">
+        <state line="3631" column="0" selection-start="141057" selection-end="141057" vertical-scroll-proportion="0.33255813">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/osoba.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="13" selection-start="3667" selection-end="3667" vertical-scroll-proportion="-1.34">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/ksiazka.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="54" selection-start="2060" selection-end="2073" vertical-scroll-proportion="0.53351206">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/pdnpm_sql/OsobaActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="17" selection-start="3252" selection-end="3252" vertical-scroll-proportion="0.097510375">
+        <state line="49" column="25" selection-start="1493" selection-end="1493" vertical-scroll-proportion="0.373444">
           <folding>
-            <element signature="e#1739#1746#0" expanded="true" />
+            <element signature="e#1664#1671#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/pdnpm_sql/DatabaseHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="190" column="50" selection-start="6840" selection-end="6840" vertical-scroll-proportion="-6.0">
+          <folding>
+            <element signature="e#4928#4937#0" expanded="true" />
+            <element signature="e#6090#6097#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/pdnpm_sql/KsiazkaActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="102" selection-start="1293" selection-end="1293" vertical-scroll-proportion="-7.48">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1806#1815#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="102" selection-start="763" selection-end="763" vertical-scroll-proportion="0.46680498">
+          <folding />
         </state>
       </provider>
     </entry>
